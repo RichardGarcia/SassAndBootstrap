@@ -1,0 +1,25 @@
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: 1.7em;
+	color: $base-font-color;
+}
+
+// links
+a {
+	color: $primary-color;
+}
+
+// list
+ul,
+li {
+	list-style: none;
+}
+
+// forms
+input, 
+textarea, 
+button {
+	@include border-radius(0);
+}
+
