@@ -4,17 +4,17 @@
 	Version: 0.1
 */
 /* BASE - base style, variables, mixins, etc */
-/* line 1, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_normalize.scss */
+/* line 2, ../scss/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* line 5, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_normalize.scss */
+/* line 6, ../scss/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 1, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_base.scss */
+/* line 1, ../scss/base/_base.scss */
 body {
   font-family: "segoe UI", "segoe WP", "segoe Regular", sans-serif;
   font-size: 15px;
@@ -22,29 +22,29 @@ body {
   color: #666666;
 }
 
-/* line 9, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_base.scss */
+/* line 9, ../scss/base/_base.scss */
 a {
   color: #00aff0;
 }
 
-/* line 15, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_base.scss */
+/* line 15, ../scss/base/_base.scss */
 ul,
 li {
   list-style: none;
 }
 
-/* line 22, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/base/_base.scss */
+/* line 22, ../scss/base/_base.scss */
 input,
 textarea,
 button {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  -moz-border-radius: 10;
+  -webkit-border-radius: 10;
+  border-radius: 10;
 }
 
 /* MODULES - individuals site components */
 /* LAYOUTS - page layout styles */
-/* line 2, C:/~rgarcia/~aral/htmlcss/SassAndBootstrap/scss/layouts/_nav.scss */
+/* line 2, ../scss/layouts/_nav.scss */
 .navbar {
   width: 90%;
   margin: auto;
@@ -54,4 +54,22 @@ button {
   min-height: 60px;
   background: #fff;
   margin-bottom: 30px;
+}
+/* line 11, ../scss/layouts/_nav.scss */
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+
+/* line 24, ../scss/layouts/_nav.scss */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #00aff0 !important;
+  color: #fff !important;
 }
