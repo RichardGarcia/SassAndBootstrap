@@ -4,17 +4,17 @@
 	Version: 0.1
 */
 /* BASE - base style, variables, mixins, etc */
-/* line 2, ../scss/base/_normalize.scss */
+/* line 2, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* line 6, ../scss/base/_normalize.scss */
+/* line 6, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 1, ../scss/base/_base.scss */
+/* line 1, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_base.scss */
 body {
   font-family: "segoe UI", "segoe WP", "segoe Regular", sans-serif;
   font-size: 15px;
@@ -22,18 +22,18 @@ body {
   color: #666666;
 }
 
-/* line 9, ../scss/base/_base.scss */
+/* line 9, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_base.scss */
 a {
   color: #00aff0;
 }
 
-/* line 15, ../scss/base/_base.scss */
+/* line 15, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_base.scss */
 ul,
 li {
   list-style: none;
 }
 
-/* line 22, ../scss/base/_base.scss */
+/* line 22, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/base/_base.scss */
 input,
 textarea,
 button {
@@ -43,8 +43,82 @@ button {
 }
 
 /* MODULES - individuals site components */
+/* sections */
+/* line 2, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+section {
+  padding: 30px 0;
+}
+
+/* line 5, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-showcase {
+  height: 400px;
+  background: url("../img/showcase.jpg") no-repeat top center;
+}
+/* line 9, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-showcase .showcase-content {
+  padding: 100px 15px;
+  text-align: center;
+}
+/* line 13, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-showcase h1 {
+  color: #00aff0;
+}
+
+/* line 17, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-primary {
+  background: #00aff0;
+  color: #fff;
+}
+
+/* line 20, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-secondary {
+  background: #7fba00;
+  color: #fff;
+}
+
+/* line 23, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-light {
+  background: #e4eef4;
+  color: #666;
+}
+
+/* line 26, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_sections.scss */
+.section-dark {
+  background: #333333;
+  color: #fff;
+}
+
+/* searchbox */
+/* line 2, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+/* line 5, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 9, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+/* line 19, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/modules/_forms.scss */
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
 /* LAYOUTS - page layout styles */
-/* line 2, ../scss/layouts/_nav.scss */
+/* line 2, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/layouts/_nav.scss */
 .navbar {
   width: 90%;
   margin: auto;
@@ -55,7 +129,7 @@ button {
   background: #fff;
   margin-bottom: 30px;
 }
-/* line 11, ../scss/layouts/_nav.scss */
+/* line 11, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/layouts/_nav.scss */
 .navbar a {
   color: #00aff0 !important;
   font-size: 20px;
@@ -64,7 +138,7 @@ button {
   padding-top: 20px !important;
 }
 
-/* line 24, ../scss/layouts/_nav.scss */
+/* line 24, /Users/richardgarcia/~rgarcia/~aral/SassAndBootstrap/scss/layouts/_nav.scss */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > .active > a,
