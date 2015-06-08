@@ -4,5 +4,54 @@
 	Version: 0.1
 */
 /* BASE - base style, variables, mixins, etc */
+/* line 2, base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 6, base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 1, base/_base.scss */
+body {
+  font-family: "segoe UI", "segoe WP", "segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 9, base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 15, base/_base.scss */
+ul,
+li {
+  list-style: none;
+}
+
+/* line 22, base/_base.scss */
+input,
+textarea,
+button {
+  -moz-border-radius: 10;
+  -webkit-border-radius: 10;
+  border-radius: 10;
+}
+
 /* MODULES - individuals site components */
 /* LAYOUTS - page layout styles */
+/* line 2, layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  margin-bottom: 30px;
+}

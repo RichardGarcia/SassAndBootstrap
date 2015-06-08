@@ -8,7 +8,6 @@
 }
 
 //add border
-
 @mixin add-border ($size, $color, $position) {
 	@if $position == "all" {
 		border: $size solid $color;
