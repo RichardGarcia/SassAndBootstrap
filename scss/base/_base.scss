@@ -20,6 +20,9 @@ li {
 input, 
 textarea, 
 button {
-	@include border-radius(10);
+	@include border-radius (0px);
 }
 
+img.device {
+	width: 100%;
+}
