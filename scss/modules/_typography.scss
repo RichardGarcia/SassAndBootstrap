@@ -2,7 +2,6 @@
 .list {
 	margin-bottom: 30px;
 }
-
 .list-feature {
 	@extend .list;
 	margin: 0;
@@ -25,8 +24,34 @@
 		margin-top: -9px;
 		margin-right: 5px;
 	}
-
 }
+.list-comments {
+	margin: 0;
+	padding: 0;
+
+	li {
+		padding: 10px 0 5px 0;
+		@include add-border (1px, #cccccc, bottom)
+	}
+	li:last-child {
+		border: 0;
+	}
+	img {
+		width: 100px;
+	}
+}
+/*
+.list-comments li {
+	padding: 10px 0 5px 0;
+	@include add-border (1px, #cccccc, bottom);
+}
+.list-comments li:last {
+	border: 0;
+}
+.list-comments img {
+	width: 100px;
+}
+*/
 
 /* FA ICONS */
 .fa-2 {
