@@ -31,7 +31,8 @@
 
 	li {
 		padding: 10px 0 5px 0;
-		@include add-border (1px, #cccccc, bottom)
+		@include add-border (1px, #cccccc, bottom);
+		overflow: auto !important;
 	}
 	li:last-child {
 		border: 0;
@@ -123,20 +124,3 @@
 .em-dark {
 	color: $dark-color;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

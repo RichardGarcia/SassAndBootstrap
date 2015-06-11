@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5 {
   width: 700px;
 }
 
+/* line 33, ../scss/base/_normalize.scss */
+.clearfix {
+  clear: both;
+}
+
 /* line 1, ../scss/base/_base.scss */
 body {
   font-family: "segoe UI", "segoe WP", "segoe Regular", sans-serif;
@@ -134,12 +139,13 @@ img.device-small {
 .list-comments li {
   padding: 10px 0 5px 0;
   border-bottom: 1px solid #cccccc;
+  overflow: auto !important;
 }
-/* line 36, ../scss/modules/_typography.scss */
+/* line 37, ../scss/modules/_typography.scss */
 .list-comments li:last-child {
   border: 0;
 }
-/* line 39, ../scss/modules/_typography.scss */
+/* line 40, ../scss/modules/_typography.scss */
 .list-comments img {
   width: 100px;
 }
@@ -157,37 +163,37 @@ img.device-small {
 }
 */
 /* FA ICONS */
-/* line 57, ../scss/modules/_typography.scss */
+/* line 58, ../scss/modules/_typography.scss */
 .fa-2 {
   font-size: 18px;
 }
 
-/* line 60, ../scss/modules/_typography.scss */
+/* line 61, ../scss/modules/_typography.scss */
 .fa-3 {
   font-size: 24px;
 }
 
-/* line 63, ../scss/modules/_typography.scss */
+/* line 64, ../scss/modules/_typography.scss */
 .fa-4 {
   font-size: 27px;
 }
 
-/* line 66, ../scss/modules/_typography.scss */
+/* line 67, ../scss/modules/_typography.scss */
 .fa-5 {
   font-size: 35px;
 }
 
-/* line 69, ../scss/modules/_typography.scss */
+/* line 70, ../scss/modules/_typography.scss */
 .fa-6 {
   font-size: 40px;
 }
 
-/* line 72, ../scss/modules/_typography.scss */
+/* line 73, ../scss/modules/_typography.scss */
 .fa-primary {
   color: #00aff0;
 }
 
-/* line 75, ../scss/modules/_typography.scss */
+/* line 76, ../scss/modules/_typography.scss */
 .fa-border {
   border: 1px solid #00aff0;
   -moz-border-radius: 5px;
@@ -199,63 +205,63 @@ img.device-small {
 }
 
 /* HEADINGS */
-/* line 84, ../scss/modules/_typography.scss */
+/* line 85, ../scss/modules/_typography.scss */
 .heading-primary, .heading-primary-a {
   color: #00aff0;
 }
 
-/* line 87, ../scss/modules/_typography.scss */
+/* line 88, ../scss/modules/_typography.scss */
 .heading-primary-a {
   border-bottom: 2px solid #00aff0;
 }
 
-/* line 91, ../scss/modules/_typography.scss */
+/* line 92, ../scss/modules/_typography.scss */
 .heading-secondary, .heading-secondary-a {
   color: #7fba00;
 }
 
-/* line 94, ../scss/modules/_typography.scss */
+/* line 95, ../scss/modules/_typography.scss */
 .heading-secondary-a {
   border-bottom: 2px solid #7fba00;
 }
 
-/* line 98, ../scss/modules/_typography.scss */
+/* line 99, ../scss/modules/_typography.scss */
 .heading-light, .heading-light-a {
   color: #e4eef4;
 }
 
-/* line 101, ../scss/modules/_typography.scss */
+/* line 102, ../scss/modules/_typography.scss */
 .heading-light-a {
   border-bottom: 2px solid #e4eef4;
 }
 
-/* line 105, ../scss/modules/_typography.scss */
+/* line 106, ../scss/modules/_typography.scss */
 .heading-dark, .heading-dark-a {
   color: #2b5464;
 }
 
-/* line 108, ../scss/modules/_typography.scss */
+/* line 109, ../scss/modules/_typography.scss */
 .heading-dark-a {
   border-bottom: 2px solid #2b5464;
 }
 
 /* emphasis text */
-/* line 114, ../scss/modules/_typography.scss */
+/* line 115, ../scss/modules/_typography.scss */
 .em-primary {
   color: #00aff0;
 }
 
-/* line 117, ../scss/modules/_typography.scss */
+/* line 118, ../scss/modules/_typography.scss */
 .em-secondary {
   color: #7fba00;
 }
 
-/* line 120, ../scss/modules/_typography.scss */
+/* line 121, ../scss/modules/_typography.scss */
 .em-light {
   color: #e4eef4;
 }
 
-/* line 123, ../scss/modules/_typography.scss */
+/* line 124, ../scss/modules/_typography.scss */
 .em-dark {
   color: #2b5464;
 }
@@ -588,4 +594,33 @@ section {
   padding: 10px 10px 5px 10px;
   border: 1px solid #cccccc;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 2, ../scss/layouts/_mobile.scss */
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* line 6, ../scss/layouts/_mobile.scss */
+  .device {
+    display: block;
+    margin: 20px auto 0 auto 20px;
+  }
+
+  /* line 10, ../scss/layouts/_mobile.scss */
+  .device-small {
+    margin-bottom: 20px !important;
+  }
+
+  /* line 15, ../scss/layouts/_mobile.scss */
+  .footer-main ul {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 19, ../scss/layouts/_mobile.scss */
+  .footer-main h4 {
+    text-align: center;
+  }
 }
